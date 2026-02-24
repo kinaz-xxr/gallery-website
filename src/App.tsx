@@ -14,6 +14,7 @@ export default function App() {
   const [filter, setFilter] = useState("All");
   const [activeId, setActiveId] = useState<number | null>(null);
   const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const [isLoading, setIsLoading] = useState(true);
 
   const filtered = useMemo(() => {
     if (filter === "All") return photos;
@@ -37,6 +38,27 @@ export default function App() {
   }, [theme]);
 
   useEffect(() => {
+    let isMounted = true;
+    const loaders = photos.map(
+      (photo) =>
+        new Promise<void>((resolve) => {
+          const img = new Image();
+          img.onload = () => resolve();
+          img.onerror = () => resolve();
+          img.src = encodeSrc(photo.src);
+        })
+    );
+
+    Promise.all(loaders).then(() => {
+      if (isMounted) setIsLoading(false);
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
     if (activeId === null) return;
 
     const handleKey = (event: KeyboardEvent) => {
@@ -53,7 +75,13 @@ export default function App() {
   }, [activeId]);
 
   return (
-    <div className="page">
+    <div className="page" aria-busy={isLoading}>
+      {isLoading && (
+        <div className="loader" role="status" aria-live="polite">
+          <span className="loader-ring" aria-hidden="true" />
+          <span className="loader-text">Loading gallery</span>
+        </div>
+      )}
       <button
         type="button"
         className="theme-icon"
