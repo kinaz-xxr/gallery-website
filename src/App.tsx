@@ -29,6 +29,25 @@ export default function App() {
   const activePhoto = activeIndex >= 0 ? filtered[activeIndex] : null;
 
   const closeLightbox = () => setActiveId(null);
+  const showNext = () => {
+    if (filtered.length === 0) return;
+    if (activeIndex < 0) {
+      setActiveId(filtered[0].id);
+      return;
+    }
+    const nextIndex = (activeIndex + 1) % filtered.length;
+    setActiveId(filtered[nextIndex].id);
+  };
+
+  const showPrev = () => {
+    if (filtered.length === 0) return;
+    if (activeIndex < 0) {
+      setActiveId(filtered[0].id);
+      return;
+    }
+    const prevIndex = (activeIndex - 1 + filtered.length) % filtered.length;
+    setActiveId(filtered[prevIndex].id);
+  };
 
   const toggleTheme = () =>
     setTheme((current) => (current === "dark" ? "light" : "dark"));
@@ -63,6 +82,8 @@ export default function App() {
 
     const handleKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowRight") showNext();
+      if (event.key === "ArrowLeft") showPrev();
     };
 
     document.addEventListener("keydown", handleKey);
@@ -72,7 +93,7 @@ export default function App() {
       document.removeEventListener("keydown", handleKey);
       document.body.style.overflow = "";
     };
-  }, [activeId]);
+  }, [activeId, activeIndex, filtered.length]);
 
   return (
     <div className="page" aria-busy={isLoading}>
@@ -162,6 +183,16 @@ export default function App() {
             onClick={closeLightbox}
             aria-label="Close"
           />
+          <button
+            type="button"
+            className="lightbox-nav lightbox-prev"
+            onClick={showPrev}
+            aria-label="Previous photo"
+          >
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M15.4 5.1a1 1 0 0 1 0 1.4L10 12l5.4 5.5a1 1 0 1 1-1.4 1.4l-6.1-6.2a1 1 0 0 1 0-1.4l6.1-6.2a1 1 0 0 1 1.4 0Z" />
+            </svg>
+          </button>
           <div className="lightbox-content">
             <img src={encodeSrc(activePhoto.src)} alt={activePhoto.name} />
             <p className="lightbox-location">
@@ -172,7 +203,18 @@ export default function App() {
               </span>
               : {photoLocations[String(activePhoto.id)] || "Add location"}
             </p>
+            <p className="lightbox-location">Index: {activeIndex}</p>
           </div>
+          <button
+            type="button"
+            className="lightbox-nav lightbox-next"
+            onClick={showNext}
+            aria-label="Next photo"
+          >
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+              <path d="M8.6 18.9a1 1 0 0 1 0-1.4L14 12 8.6 6.5A1 1 0 1 1 10 5.1l6.1 6.2a1 1 0 0 1 0 1.4L10 18.9a1 1 0 0 1-1.4 0Z" />
+            </svg>
+          </button>
         </div>
       )}
     </div>
