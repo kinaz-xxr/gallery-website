@@ -203,7 +203,6 @@ export default function App() {
               </span>
               : {photoLocations[String(activePhoto.id)] || "Add location"}
             </p>
-            <p className="lightbox-location">Index: {activeIndex}</p>
           </div>
           <button
             type="button"

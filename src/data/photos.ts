@@ -407,5 +407,11 @@ export const photos: Photo[] = [
         "src":  "/woah-resized/image (9).JPG",
         "set":  "Woah",
         "name":  "image (9)"
+    },
+    {
+        "id":  69,
+        "src":  "/woah-resized/image (27).jpg",
+        "set":  "Woah",
+        "name":  "image (27)"
     }
 ];

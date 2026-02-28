@@ -59,7 +59,7 @@ export const photoLocations: Record<string, string> = {
   '58': 'Middle school, Vietnam',
   '59': 'Quy Nhon, Vietnam',
   '60': 'Brampton, Canada',
-  '61': 'Quy Nhon, Vietnma',
+  '61': 'Quy Nhon, Vietnam',
   '62': 'Quy Nhon, Canada',
   '63': 'Montreal, Canada',
   '64': 'Phan Thiet, Vietnam',
