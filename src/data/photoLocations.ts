@@ -67,4 +67,5 @@ export const photoLocations: Record<string, string> = {
   '66': 'Brampton, Canada',
   '67': 'Lowkey dont remember, Canada',
   '68': 'High School, Canada',
+  '69': 'Waterloo, Canada',
 };
