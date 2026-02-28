@@ -334,6 +334,33 @@ h1 {
   fill: currentColor;
 }
 
+.site-footer {
+  margin-top: 48px;
+  padding: 20px 0 8px;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-heart {
+  display: inline-flex;
+  margin-left: 6px;
+  vertical-align: middle;
+  color: var(--accent);
+}
+
+.footer-heart svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .lightbox-content img {
   max-width: 100%;
   max-height: 65vh;
@@ -424,11 +451,30 @@ h1 {
   .lightbox-content {
     padding: 12px;
     max-width: 92vw;
+    max-height: 78vh;
+  }
+
+  .lightbox-content img {
+    max-height: 50vh;
   }
 
   .lightbox-meta {
     flex-direction: column;
     gap: 6px;
+  }
+
+  .lightbox-nav {
+    top: auto;
+    bottom: 22px;
+    transform: translateY(0);
+  }
+
+  .lightbox-prev {
+    left: calc(50% - 64px);
+  }
+
+  .lightbox-next {
+    right: calc(50% - 64px);
   }
 }
 

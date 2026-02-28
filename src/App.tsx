@@ -122,8 +122,8 @@ export default function App() {
       <header className="topbar">
         <div>
           <p className="eyebrow">Gallery</p>
-          <h1>Quiet Frames</h1>
-          <p className="subtitle">A calm set of everyday scenes, pared down.</p>
+          <h1>Dat's camera</h1>
+          <p className="subtitle">I used to hate taking photos or being in one but now we're here :)</p>
         </div>
         <div className="filters filters-header" role="tablist" aria-label="Collection">
           {FILTERS.map((option) => (
@@ -203,7 +203,6 @@ export default function App() {
               </span>
               : {photoLocations[String(activePhoto.id)] || "Add location"}
             </p>
-            <p className="lightbox-location">Index: {activeIndex}</p>
           </div>
           <button
             type="button"
@@ -217,6 +216,16 @@ export default function App() {
           </button>
         </div>
       )}
+      <footer className="site-footer">
+        <p>
+          Built by Dat with Claude, 2026
+          <span className="footer-heart" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 20.7s-6.7-4.6-9.1-7.7C1 10.9 1.3 7.7 3.7 6 6 4.4 8.8 5 10.2 7c1.4-2 4.2-2.6 6.5-1 2.4 1.7 2.7 4.9.8 7-2.4 3.1-9.1 7.7-9.1 7.7Z" />
+            </svg>
+          </span>
+        </p>
+      </footer>
     </div>
   );
 }
