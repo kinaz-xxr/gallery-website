@@ -145,12 +145,6 @@ export const photos: Photo[] = [
         "name":  "film (35)"
     },
     {
-        "id":  24,
-        "src":  "/film-camera/film (36).jpeg",
-        "set":  "Film Camera",
-        "name":  "film (36)"
-    },
-    {
         "id":  25,
         "src":  "/film-camera/film (38).jpeg",
         "set":  "Film Camera",
@@ -242,7 +236,7 @@ export const photos: Photo[] = [
     },
     {
         "id":  40,
-        "src":  "/woah-resized/image (13).JPG",
+        "src":  "/woah-resized/image (13).jpg",
         "set":  "Woah",
         "name":  "image (13)"
     },
@@ -290,7 +284,7 @@ export const photos: Photo[] = [
     },
     {
         "id":  48,
-        "src":  "/woah-resized/image (2).JPG",
+        "src":  "/woah-resized/image (2).jpg",
         "set":  "Woah",
         "name":  "image (2)"
     },
@@ -380,7 +374,7 @@ export const photos: Photo[] = [
     },
     {
         "id":  63,
-        "src":  "/woah-resized/image (6).JPG",
+        "src":  "/woah-resized/image (6).jpg",
         "set":  "Woah",
         "name":  "image (6)"
     },

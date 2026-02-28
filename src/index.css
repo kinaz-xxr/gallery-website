@@ -74,6 +74,7 @@ html[data-theme="light"] body {
 .page[aria-busy="true"] .gallery {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .page[aria-busy="true"] .topbar,
@@ -217,8 +218,8 @@ h1 {
   display: grid;
   place-items: center;
   gap: 12px;
-  background: rgba(10, 10, 10, 0.4);
-  backdrop-filter: blur(6px);
+  background: linear-gradient(160deg, #171614 0%, #141312 45%, #0f0f0e 100%);
+  backdrop-filter: none;
   color: var(--ink);
   text-transform: uppercase;
   letter-spacing: 0.2em;
