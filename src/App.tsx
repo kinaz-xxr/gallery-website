@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { photos } from "./data/photos";
 import { photoLocations } from "./data/photoLocations";
 
@@ -9,12 +9,58 @@ const FILTERS: Array<{ label: string; value: string }> = [
 ];
 
 const encodeSrc = (src: string) => encodeURI(src);
+const EMPTY_PIXEL =
+  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+type LazyImageProps = {
+  src: string;
+  alt: string;
+};
+
+function LazyImage({ src, alt }: LazyImageProps) {
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    if (isVisible || !imgRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(imgRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isVisible]);
+
+  return (
+    <img
+      ref={imgRef}
+      src={isVisible ? encodeSrc(src) : EMPTY_PIXEL}
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+      className={isLoaded ? "" : "is-loading"}
+      onLoad={() => setIsLoaded(true)}
+    />
+  );
+}
 
 export default function App() {
   const [filter, setFilter] = useState("All");
   const [activeId, setActiveId] = useState<number | null>(null);
   const [theme, setTheme] = useState<"dark" | "light">("dark");
-  const [isLoading, setIsLoading] = useState(true);
 
   const filtered = useMemo(() => {
     if (filter === "All") return photos;
@@ -57,27 +103,6 @@ export default function App() {
   }, [theme]);
 
   useEffect(() => {
-    let isMounted = true;
-    const loaders = photos.map(
-      (photo) =>
-        new Promise<void>((resolve) => {
-          const img = new Image();
-          img.onload = () => resolve();
-          img.onerror = () => resolve();
-          img.src = encodeSrc(photo.src);
-        })
-    );
-
-    Promise.all(loaders).then(() => {
-      if (isMounted) setIsLoading(false);
-    });
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
-
-  useEffect(() => {
     if (activeId === null) return;
 
     const handleKey = (event: KeyboardEvent) => {
@@ -96,13 +121,7 @@ export default function App() {
   }, [activeId, activeIndex, filtered.length]);
 
   return (
-    <div className="page" aria-busy={isLoading}>
-      {isLoading && (
-        <div className="loader" role="status" aria-live="polite">
-          <span className="loader-ring" aria-hidden="true" />
-          <span className="loader-text">Loading gallery</span>
-        </div>
-      )}
+    <div className="page" aria-busy={false}>
       <button
         type="button"
         className="theme-icon"
@@ -165,12 +184,7 @@ export default function App() {
             onClick={() => setActiveId(photo.id)}
             aria-label={`Open ${photo.name}`}
           >
-            <img
-              src={encodeSrc(photo.src)}
-              alt={photo.name}
-              loading="lazy"
-              decoding="async"
-            />
+            <LazyImage src={photo.src} alt={photo.name} />
           </button>
         ))}
       </main>

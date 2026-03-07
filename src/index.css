@@ -257,8 +257,12 @@ h1 {
   display: block;
   border-radius: 14px;
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.28);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.3s ease;
   background: #1a1917;
+}
+
+.tile img.is-loading {
+  opacity: 0;
 }
 
 .tile:hover img {
