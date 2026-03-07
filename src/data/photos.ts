@@ -8,410 +8,410 @@ export type Photo = {
 export const photos: Photo[] = [
     {
         "id":  1,
-        "src":  "/film-camera/film (1).jpeg",
+        "src":  "/film-camera/film_1.jpg",
         "set":  "Film Camera",
-        "name":  "film (1)"
+        "name":  "film_1"
     },
     {
         "id":  2,
-        "src":  "/film-camera/film (10).jpeg",
+        "src":  "/film-camera/film_2.jpg",
         "set":  "Film Camera",
-        "name":  "film (10)"
+        "name":  "film_2"
     },
     {
         "id":  3,
-        "src":  "/film-camera/film (14).jpeg",
+        "src":  "/film-camera/film_3.jpg",
         "set":  "Film Camera",
-        "name":  "film (14)"
+        "name":  "film_3"
     },
     {
         "id":  4,
-        "src":  "/film-camera/film (15).jpeg",
+        "src":  "/film-camera/film_4.jpg",
         "set":  "Film Camera",
-        "name":  "film (15)"
+        "name":  "film_4"
     },
     {
         "id":  5,
-        "src":  "/film-camera/film (16).jpeg",
+        "src":  "/film-camera/film_5.jpg",
         "set":  "Film Camera",
-        "name":  "film (16)"
+        "name":  "film_5"
     },
     {
         "id":  6,
-        "src":  "/film-camera/film (18).jpeg",
+        "src":  "/film-camera/film_6.jpg",
         "set":  "Film Camera",
-        "name":  "film (18)"
+        "name":  "film_6"
     },
     {
         "id":  7,
-        "src":  "/film-camera/film (19).jpeg",
+        "src":  "/film-camera/film_7.jpg",
         "set":  "Film Camera",
-        "name":  "film (19)"
+        "name":  "film_7"
     },
     {
         "id":  8,
-        "src":  "/film-camera/film (2).jpeg",
+        "src":  "/film-camera/film_8.jpg",
         "set":  "Film Camera",
-        "name":  "film (2)"
+        "name":  "film_8"
     },
     {
         "id":  9,
-        "src":  "/film-camera/film (20).jpeg",
+        "src":  "/film-camera/film_9.jpg",
         "set":  "Film Camera",
-        "name":  "film (20)"
+        "name":  "film_9"
     },
     {
         "id":  10,
-        "src":  "/film-camera/film (21).jpeg",
+        "src":  "/film-camera/film_10.jpg",
         "set":  "Film Camera",
-        "name":  "film (21)"
+        "name":  "film_10"
     },
     {
         "id":  11,
-        "src":  "/film-camera/film (23).jpeg",
+        "src":  "/film-camera/film_11.jpg",
         "set":  "Film Camera",
-        "name":  "film (23)"
+        "name":  "film_11"
     },
     {
         "id":  12,
-        "src":  "/film-camera/film (24).jpeg",
+        "src":  "/film-camera/film_12.jpg",
         "set":  "Film Camera",
-        "name":  "film (24)"
+        "name":  "film_12"
     },
     {
         "id":  13,
-        "src":  "/film-camera/film (26).jpeg",
+        "src":  "/film-camera/film_13.jpg",
         "set":  "Film Camera",
-        "name":  "film (26)"
+        "name":  "film_13"
     },
     {
         "id":  14,
-        "src":  "/film-camera/film (27).jpeg",
+        "src":  "/film-camera/film_14.jpg",
         "set":  "Film Camera",
-        "name":  "film (27)"
+        "name":  "film_14"
     },
     {
         "id":  15,
-        "src":  "/film-camera/film (28).jpeg",
+        "src":  "/film-camera/film_15.jpg",
         "set":  "Film Camera",
-        "name":  "film (28)"
+        "name":  "film_15"
     },
     {
         "id":  16,
-        "src":  "/film-camera/film (29).jpeg",
+        "src":  "/film-camera/film_16.jpg",
         "set":  "Film Camera",
-        "name":  "film (29)"
+        "name":  "film_16"
     },
     {
         "id":  17,
-        "src":  "/film-camera/film (3).jpeg",
+        "src":  "/film-camera/film_17.jpg",
         "set":  "Film Camera",
-        "name":  "film (3)"
+        "name":  "film_17"
     },
     {
         "id":  18,
-        "src":  "/film-camera/film (30).jpeg",
+        "src":  "/film-camera/film_18.jpg",
         "set":  "Film Camera",
-        "name":  "film (30)"
+        "name":  "film_18"
     },
     {
         "id":  19,
-        "src":  "/film-camera/film (31).jpeg",
+        "src":  "/film-camera/film_19.jpg",
         "set":  "Film Camera",
-        "name":  "film (31)"
+        "name":  "film_19"
     },
     {
         "id":  20,
-        "src":  "/film-camera/film (32).jpeg",
+        "src":  "/film-camera/film_20.jpg",
         "set":  "Film Camera",
-        "name":  "film (32)"
+        "name":  "film_20"
     },
     {
         "id":  21,
-        "src":  "/film-camera/film (33).jpeg",
+        "src":  "/film-camera/film_21.jpg",
         "set":  "Film Camera",
-        "name":  "film (33)"
+        "name":  "film_21"
     },
     {
         "id":  22,
-        "src":  "/film-camera/film (34).jpeg",
+        "src":  "/film-camera/film_22.jpg",
         "set":  "Film Camera",
-        "name":  "film (34)"
+        "name":  "film_22"
     },
     {
         "id":  23,
-        "src":  "/film-camera/film (35).jpeg",
+        "src":  "/film-camera/film_23.jpg",
         "set":  "Film Camera",
-        "name":  "film (35)"
+        "name":  "film_23"
     },
     {
         "id":  25,
-        "src":  "/film-camera/film (38).jpeg",
+        "src":  "/film-camera/film_24.jpg",
         "set":  "Film Camera",
-        "name":  "film (38)"
+        "name":  "film_24"
     },
     {
         "id":  26,
-        "src":  "/film-camera/film (39).jpeg",
+        "src":  "/film-camera/film_25.jpg",
         "set":  "Film Camera",
-        "name":  "film (39)"
+        "name":  "film_25"
     },
     {
         "id":  27,
-        "src":  "/film-camera/film (4).jpeg",
+        "src":  "/film-camera/film_26.jpg",
         "set":  "Film Camera",
-        "name":  "film (4)"
+        "name":  "film_26"
     },
     {
         "id":  28,
-        "src":  "/film-camera/film (40).jpeg",
+        "src":  "/film-camera/film_27.jpg",
         "set":  "Film Camera",
-        "name":  "film (40)"
+        "name":  "film_27"
     },
     {
         "id":  29,
-        "src":  "/film-camera/film (41).jpeg",
+        "src":  "/film-camera/film_28.jpg",
         "set":  "Film Camera",
-        "name":  "film (41)"
+        "name":  "film_28"
     },
     {
         "id":  30,
-        "src":  "/film-camera/film (5).jpeg",
+        "src":  "/film-camera/film_29.jpg",
         "set":  "Film Camera",
-        "name":  "film (5)"
+        "name":  "film_29"
     },
     {
         "id":  31,
-        "src":  "/film-camera/film (6).jpeg",
+        "src":  "/film-camera/film_30.jpg",
         "set":  "Film Camera",
-        "name":  "film (6)"
+        "name":  "film_30"
     },
     {
         "id":  32,
-        "src":  "/film-camera/film (7).jpeg",
+        "src":  "/film-camera/film_31.jpg",
         "set":  "Film Camera",
-        "name":  "film (7)"
+        "name":  "film_31"
     },
     {
         "id":  33,
-        "src":  "/film-camera/film (8).jpeg",
+        "src":  "/film-camera/film_32.jpg",
         "set":  "Film Camera",
-        "name":  "film (8)"
+        "name":  "film_32"
     },
     {
         "id":  34,
-        "src":  "/film-camera/film (9).jpeg",
+        "src":  "/film-camera/film_33.jpg",
         "set":  "Film Camera",
-        "name":  "film (9)"
+        "name":  "film_33"
     },
     {
         "id":  35,
-        "src":  "/woah-resized/image (1).jpeg",
+        "src":  "/woah-resized/image_1.jpg",
         "set":  "Woah",
-        "name":  "image (1)"
+        "name":  "image_1"
     },
     {
         "id":  36,
-        "src":  "/woah-resized/image (1).JPG",
+        "src":  "/woah-resized/image_2.jpg",
         "set":  "Woah",
-        "name":  "image (1)"
+        "name":  "image_2"
     },
     {
         "id":  37,
-        "src":  "/woah-resized/image (10).jpg",
+        "src":  "/woah-resized/image_3.jpg",
         "set":  "Woah",
-        "name":  "image (10)"
+        "name":  "image_3"
     },
     {
         "id":  38,
-        "src":  "/woah-resized/image (11).JPG",
+        "src":  "/woah-resized/image_4.jpg",
         "set":  "Woah",
-        "name":  "image (11)"
+        "name":  "image_4"
     },
     {
         "id":  39,
-        "src":  "/woah-resized/image (12).JPG",
+        "src":  "/woah-resized/image_5.jpg",
         "set":  "Woah",
-        "name":  "image (12)"
+        "name":  "image_5"
     },
     {
         "id":  40,
-        "src":  "/woah-resized/image (13).jpg",
+        "src":  "/woah-resized/image_6.jpg",
         "set":  "Woah",
-        "name":  "image (13)"
+        "name":  "image_6"
     },
     {
         "id":  41,
-        "src":  "/woah-resized/image (14).jpg",
+        "src":  "/woah-resized/image_7.jpg",
         "set":  "Woah",
-        "name":  "image (14)"
+        "name":  "image_7"
     },
     {
         "id":  42,
-        "src":  "/woah-resized/image (15).JPG",
+        "src":  "/woah-resized/image_8.jpg",
         "set":  "Woah",
-        "name":  "image (15)"
+        "name":  "image_8"
     },
     {
         "id":  43,
-        "src":  "/woah-resized/image (16).JPG",
+        "src":  "/woah-resized/image_9.jpg",
         "set":  "Woah",
-        "name":  "image (16)"
+        "name":  "image_9"
     },
     {
         "id":  44,
-        "src":  "/woah-resized/image (17).JPG",
+        "src":  "/woah-resized/image_10.jpg",
         "set":  "Woah",
-        "name":  "image (17)"
+        "name":  "image_10"
     },
     {
         "id":  45,
-        "src":  "/woah-resized/image (18).JPG",
+        "src":  "/woah-resized/image_11.jpg",
         "set":  "Woah",
-        "name":  "image (18)"
+        "name":  "image_11"
     },
     {
         "id":  46,
-        "src":  "/woah-resized/image (19).JPG",
+        "src":  "/woah-resized/image_12.jpg",
         "set":  "Woah",
-        "name":  "image (19)"
+        "name":  "image_12"
     },
     {
         "id":  47,
-        "src":  "/woah-resized/image (2).jpeg",
+        "src":  "/woah-resized/image_13.jpg",
         "set":  "Woah",
-        "name":  "image (2)"
+        "name":  "image_13"
     },
     {
         "id":  48,
-        "src":  "/woah-resized/image (2).jpg",
+        "src":  "/woah-resized/image_14.jpg",
         "set":  "Woah",
-        "name":  "image (2)"
+        "name":  "image_14"
     },
     {
         "id":  49,
-        "src":  "/woah-resized/image (20).JPG",
+        "src":  "/woah-resized/image_15.jpg",
         "set":  "Woah",
-        "name":  "image (20)"
+        "name":  "image_15"
     },
     {
         "id":  50,
-        "src":  "/woah-resized/image (21).JPG",
+        "src":  "/woah-resized/image_16.jpg",
         "set":  "Woah",
-        "name":  "image (21)"
+        "name":  "image_16"
     },
     {
         "id":  51,
-        "src":  "/woah-resized/image (22).JPG",
+        "src":  "/woah-resized/image_17.jpg",
         "set":  "Woah",
-        "name":  "image (22)"
+        "name":  "image_17"
     },
     {
         "id":  52,
-        "src":  "/woah-resized/image (23).JPG",
+        "src":  "/woah-resized/image_18.jpg",
         "set":  "Woah",
-        "name":  "image (23)"
+        "name":  "image_18"
     },
     {
         "id":  53,
-        "src":  "/woah-resized/image (24).JPG",
+        "src":  "/woah-resized/image_19.jpg",
         "set":  "Woah",
-        "name":  "image (24)"
+        "name":  "image_19"
     },
     {
         "id":  54,
-        "src":  "/woah-resized/image (25).JPG",
+        "src":  "/woah-resized/image_20.jpg",
         "set":  "Woah",
-        "name":  "image (25)"
+        "name":  "image_20"
     },
     {
         "id":  55,
-        "src":  "/woah-resized/image (26).jpg",
+        "src":  "/woah-resized/image_21.jpg",
         "set":  "Woah",
-        "name":  "image (26)"
+        "name":  "image_21"
     },
     {
         "id":  56,
-        "src":  "/woah-resized/image (3).JPEG",
+        "src":  "/woah-resized/image_22.jpg",
         "set":  "Woah",
-        "name":  "image (3)"
+        "name":  "image_22"
     },
     {
         "id":  57,
-        "src":  "/woah-resized/image (3).JPG",
+        "src":  "/woah-resized/image_23.jpg",
         "set":  "Woah",
-        "name":  "image (3)"
+        "name":  "image_23"
     },
     {
         "id":  58,
-        "src":  "/woah-resized/image (4).JPEG",
+        "src":  "/woah-resized/image_24.jpg",
         "set":  "Woah",
-        "name":  "image (4)"
+        "name":  "image_24"
     },
     {
         "id":  59,
-        "src":  "/woah-resized/image (4).JPG",
+        "src":  "/woah-resized/image_25.jpg",
         "set":  "Woah",
-        "name":  "image (4)"
+        "name":  "image_25"
     },
     {
         "id":  60,
-        "src":  "/woah-resized/image (5).JPEG",
+        "src":  "/woah-resized/image_26.jpg",
         "set":  "Woah",
-        "name":  "image (5)"
+        "name":  "image_26"
     },
     {
         "id":  61,
-        "src":  "/woah-resized/image (5).JPG",
+        "src":  "/woah-resized/image_27.jpg",
         "set":  "Woah",
-        "name":  "image (5)"
+        "name":  "image_27"
     },
     {
         "id":  62,
-        "src":  "/woah-resized/image (6).JPEG",
+        "src":  "/woah-resized/image_28.jpg",
         "set":  "Woah",
-        "name":  "image (6)"
+        "name":  "image_28"
     },
     {
         "id":  63,
-        "src":  "/woah-resized/image (6).jpg",
+        "src":  "/woah-resized/image_29.jpg",
         "set":  "Woah",
-        "name":  "image (6)"
+        "name":  "image_29"
     },
     {
         "id":  64,
-        "src":  "/woah-resized/image (7).JPEG",
+        "src":  "/woah-resized/image_30.jpg",
         "set":  "Woah",
-        "name":  "image (7)"
+        "name":  "image_30"
     },
     {
         "id":  65,
-        "src":  "/woah-resized/image (7).JPG",
+        "src":  "/woah-resized/image_31.jpg",
         "set":  "Woah",
-        "name":  "image (7)"
+        "name":  "image_31"
     },
     {
         "id":  66,
-        "src":  "/woah-resized/image (8).jpeg",
+        "src":  "/woah-resized/image_32.jpg",
         "set":  "Woah",
-        "name":  "image (8)"
+        "name":  "image_32"
     },
     {
         "id":  67,
-        "src":  "/woah-resized/image (8).JPG",
+        "src":  "/woah-resized/image_33.jpg",
         "set":  "Woah",
-        "name":  "image (8)"
+        "name":  "image_33"
     },
     {
         "id":  68,
-        "src":  "/woah-resized/image (9).JPG",
+        "src":  "/woah-resized/image_34.jpg",
         "set":  "Woah",
-        "name":  "image (9)"
+        "name":  "image_34"
     },
     {
         "id":  69,
-        "src":  "/woah-resized/image (27).jpg",
+        "src":  "/woah-resized/image_35.jpg",
         "set":  "Woah",
-        "name":  "image (27)"
+        "name":  "image_35"
     }
 ];
